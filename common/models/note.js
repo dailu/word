@@ -7,4 +7,12 @@ module.exports = function(Note) {
 	          accepts: {arg: 'msg', type: 'string'},
 	          returns: {arg: 'greeting', type: 'string'}
 	    });
+	    Note.hello = function(msg, cb) {
+		      cb(null, 'Hello... ' + msg);
+		    }
+
+		    Note.remoteMethod('hello', {
+		          accepts: {arg: 'msg', type: 'string'},
+		          returns: {arg: 'greeting', type: 'string'}
+		    });
 };
