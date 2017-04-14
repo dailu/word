@@ -1,0 +1,47 @@
+{
+  "name": "Customer",
+  "base": "User",
+  "idInjection": true,
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "address": {
+      "type": "embedsOne",
+      "model": "Address",
+      "property": "billingAddress",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    },
+   
+    "accounts": {
+      "type": "referencesMany",
+      "model": "Account",
+      "foreignKey": "accountIds",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    },
+    "orders": {
+      "type": "hasMany",
+      "model": "Order",
+      "foreignKey": ""
+    }
+  },
+  "acls": [{
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "accessType": "READ",
+      "permission": "ALLOW"
+    }],
+  "methods": {}
+}
