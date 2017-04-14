@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+         "word": "goodbye",
+         "difficulty": 3,
+         "visits": 1,
+         "comments": "googbye cs",
+         "remembered":true,
+         "example":"Goodbye, John, see you tomorrow.",
+         "audio":"http://api.pearson.com/v2/dictionaries/assets/ldoce/gb_pron/ld41goodbye.mp3",
+         "image":"https://s3.amazonaws.com/cocoacontrols_production/uploads/control_image/image/2575/iOS_Simulator.png"
+    },  {
+        "id": 2,
+         "word": "happy",
+         "difficulty": 3,
+         "visits": 1,
+         "comments": "happy cs",
+         "remembered":false,
+         "example":"Goodbye, John, see you tomorrow.",
+         "audio":"http://api.pearson.com/v2/dictionaries/assets/ldoce/gb_pron/ld41goodbye.mp3",
+         "image":"https://s3.amazonaws.com/cocoacontrols_production/uploads/control_image/image/2575/iOS_Simulator.png",
+         "vidoe":"https://www.w3schools.com/html/mov_bbb.mp4"
+
+    },
+      {
+        "id": 3,
+         "word": "sad",
+         "difficulty": 2,
+         "visits": 1,
+         "comments": "sad cs",
+         "remembered":false,
+         "example":"Goodbye, John, see you tomorrow.",
+         "audio":"http://api.pearson.com/v2/dictionaries/assets/ldoce/gb_pron/ld41goodbye.mp3",
+         "image":"https://s3.amazonaws.com/cocoacontrols_production/uploads/control_image/image/2575/iOS_Simulator.png",
+         "video":"https://www.w3schools.com/html/mov_bbb.mp4"
+
+    }
+   
+]
