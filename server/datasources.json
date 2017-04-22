@@ -26,5 +26,49 @@
         }
       }
     ]
+  },
+  "DictionaryService": {
+    "name": "DictionaryService",
+    "connector": "rest",
+    "operations": [
+      {
+        "template": {
+          "method": "GET",
+          "url": "http://api.pearson.com/v2/dictionaries/ldoce5/entries?headword=goodbye"
+        },
+        "functions": {
+          "find": []
+        }
+      }
+    ]
+  },
+  "geoRest": {
+    "name": "geoRest",
+    "connector": "rest",
+    "debug": "false",
+    "operations": [
+      {
+        "template": {
+          "method": "GET",
+          "url": "http://maps.googleapis.com/maps/api/geocode/{format=json}",
+          "headers": {
+            "accepts": "application/json",
+            "content-type": "application/json"
+          },
+          "query": {
+            "address": "{street},{city},{zipcode}",
+            "sensor": "{sensor=false}"
+          },
+          "responsePath": "$.results[0].geometry.location"
+        },
+        "functions": {
+          "geocode": [
+            "street",
+            "city",
+            "zipcode"
+          ]
+        }
+      }
+    ]
   }
 }

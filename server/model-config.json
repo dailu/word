@@ -13,7 +13,6 @@
       "./mixins"
     ]
   },
- 
   "AccessToken": {
     "dataSource": "db",
     "public": false
@@ -33,19 +32,12 @@
     "dataSource": "db",
     "public": false
   },
-  "Note": {
-    "dataSource": "db"
-  },
-   "Customer": {
+  "Customer": {
     "dataSource": "db",
     "public": true
   },
   "Address": {
     "dataSource": "transient",
-    "public": false
-  },
-  "Account": {
-    "dataSource": "db",
     "public": false
   },
   "Author": {
@@ -65,6 +57,34 @@
     "public": false
   },
   "Order": {
+    "dataSource": "db",
+    "public": true
+  },
+  "note": {
+    "dataSource": "db",
+    "public": true
+  },
+  "bike": {
+    "dataSource": "db",
+    "public": true
+  },
+  "BikeUsage": {
+    "dataSource": "db",
+    "public": true
+  },
+  "BikeIssue": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Issue": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Survey": {
+    "dataSource": "db",
+    "public": true
+  },
+  "BikeSurvey": {
     "dataSource": "db",
     "public": true
   }

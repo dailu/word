@@ -12,6 +12,9 @@
     "state": {
       "type": "string"
     },
+    "country": {
+      "type": "string"
+    },
     "zipCode": {
       "type": "string"
     }

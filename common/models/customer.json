@@ -20,28 +20,15 @@
         "validate": true,
         "forceId": false
       }
-    },
-   
-    "accounts": {
-      "type": "referencesMany",
-      "model": "Account",
-      "foreignKey": "accountIds",
-      "options": {
-        "validate": true,
-        "forceId": false
-      }
-    },
-    "orders": {
-      "type": "hasMany",
-      "model": "Order",
-      "foreignKey": ""
     }
   },
-  "acls": [{
+  "acls": [
+    {
+      "accessType": "READ",
       "principalType": "ROLE",
       "principalId": "$everyone",
-      "accessType": "READ",
       "permission": "ALLOW"
-    }],
+    }
+  ],
   "methods": {}
 }
