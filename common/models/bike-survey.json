@@ -1,0 +1,39 @@
+{
+  "name": "BikeSurvey",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "answer": {
+      "type": "string"
+    },
+    "FreeText": {
+      "type": "string"
+    },
+    "updateTime": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "customerId": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": "customerId"
+    },
+    "bikeId": {
+      "type": "belongsTo",
+      "model": "bike",
+      "foreignKey": "bikeId"
+    },
+    "surveyId": {
+      "type": "belongsTo",
+      "model": "Survey",
+      "foreignKey": "surveyId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

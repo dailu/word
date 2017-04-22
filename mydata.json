@@ -1,0 +1,86 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 4,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "Note": 2,
+    "Author": 2,
+    "Customer": 10,
+    "Reader": 2,
+    "Order": 6,
+    "Book": 2,
+    "Account": 3,
+    "bike": 3,
+    "Issue": 6,
+    "Survey": 4,
+    "BikeUsage": 3,
+    "BikeIssue": 2,
+    "BikeSurvey": 2
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {
+      "QuhdWc5RXlKKWsV03pWN8avJvCVdA9uDDo4XCW47XbBTfWPWQPctgDFsnjy1H60A": "{\"id\":\"QuhdWc5RXlKKWsV03pWN8avJvCVdA9uDDo4XCW47XbBTfWPWQPctgDFsnjy1H60A\",\"ttl\":86400,\"created\":\"2017-04-14T03:31:11.116Z\",\"userId\":8}",
+      "HQdloZ3oN7O9CMOeJoGCfbduuW85tYvOFtahRDfOHA2PXx828UtHvgnKiGAUXxVY": "{\"id\":\"HQdloZ3oN7O9CMOeJoGCfbduuW85tYvOFtahRDfOHA2PXx828UtHvgnKiGAUXxVY\",\"ttl\":1209600,\"created\":\"2017-04-22T09:02:04.906Z\",\"userId\":1}",
+      "hyhJ7bcnG2KP2yRmuxEUR7aTudIX2N60JWXfo1cLtf1stfNZNdYaURO0wkIgU2AH": "{\"id\":\"hyhJ7bcnG2KP2yRmuxEUR7aTudIX2N60JWXfo1cLtf1stfNZNdYaURO0wkIgU2AH\",\"ttl\":1209600,\"created\":\"2017-04-22T09:02:12.308Z\",\"userId\":9}"
+    },
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "Note": {
+      "1": "{\"title\":\"string\",\"content\":\"string\",\"id\":1}"
+    },
+    "Author": {
+      "1": "{\"name\":\"Author 1\",\"id\":1}"
+    },
+    "Customer": {
+      "1": "{\"name\":\"test\",\"age\":40,\"realm\":\"string\",\"username\":\"test\",\"password\":\"$2a$10$byyLgz9pF0yCdJ1NKmrCtOcUXNLehBe3pIPAvxOLUQyQtHNvEtM3i\",\"email\":\"dai_lu@hotmail.com\",\"emailVerified\":true,\"billingAddress\":{\"street\":\"string\",\"city\":\"string\",\"country\":\"string\",\"state\":\"string\",\"zipCode\":\"string\"},\"id\":1}",
+      "9": "{\"name\":\"string\",\"age\":0,\"realm\":\"string\",\"username\":\"string\",\"password\":\"$2a$10$byyLgz9pF0yCdJ1NKmrCtOcUXNLehBe3pIPAvxOLUQyQtHNvEtM3i\",\"email\":\"dailu@hotmail.com\",\"emailVerified\":true,\"billingAddress\":{\"street\":\"string\",\"city\":\"string\",\"state\":\"string\",\"country\":\"string\",\"zipCode\":\"string\"},\"id\":9}"
+    },
+    "Reader": {
+      "1": "{\"name\":\"Reader 1\",\"id\":1}"
+    },
+    "Order": {
+      "1": "{\"date\":\"2014-12-31T16:00:00.000Z\",\"description\":\"First order by Customer A\",\"customerId\":1,\"id\":1}",
+      "2": "{\"date\":\"2015-01-31T16:00:00.000Z\",\"description\":\"Second order by Customer A\",\"customerId\":1,\"id\":2}",
+      "3": "{\"date\":\"2015-02-28T16:00:00.000Z\",\"description\":\"Order by Customer B\",\"customerId\":2,\"id\":3}",
+      "4": "{\"date\":\"2015-03-31T16:00:00.000Z\",\"description\":\"Order by Customer C\",\"customerId\":3,\"id\":4}",
+      "5": "{\"date\":\"2015-04-30T16:00:00.000Z\",\"description\":\"Order by Anonymous\",\"id\":5}"
+    },
+    "Book": {
+      "1": "{\"name\":\"Book 1\",\"links\":[{\"id\":1,\"name\":\"Author 1\",\"notes\":\"Note 1\",\"linkedId\":1,\"linkedType\":\"Author\"},{\"id\":2,\"name\":\"Reader 1\",\"notes\":\"Note 2\",\"linkedId\":1,\"linkedType\":\"Reader\"}],\"id\":1}"
+    },
+    "Account": {
+      "1": "{\"name\":\"Checking\",\"balance\":5000,\"id\":1}",
+      "2": "{\"name\":\"Saving\",\"balance\":2000,\"id\":2}"
+    },
+    "bike": {
+      "1": "{\"bikecode\":\"10001\",\"passcode\":\"ABCD\",\"id\":1}",
+      "2": "{\"bikecode\":\"10002\",\"passcode\":\"ABCD\",\"id\":2}"
+    },
+    "Issue": {
+      "1": "{\"IssueName\":\"unlock code is not working\",\"id\":1}",
+      "2": "{\"IssueName\":\"helmet is missing\",\"id\":2}",
+      "3": "{\"IssueName\":\"break faulty\",\"id\":3}",
+      "4": "{\"IssueName\":\"flat tyre\",\"id\":4}",
+      "5": "{\"IssueName\":\"others\",\"id\":5}"
+    },
+    "Survey": {
+      "1": "{\"surveyDesc\":\"Do you like this bike\",\"expectedAnswer\":\"yes|no\",\"id\":1}",
+      "2": "{\"surveyDesc\":\"Do you like this app\",\"expectedAnswer\":\"yes|no\",\"id\":2}",
+      "3": "{\"surveyDesc\":\"rate our service\",\"expectedAnswer\":\"1|2|3|4|5\",\"id\":3}"
+    },
+    "BikeUsage": {
+      "1": "{\"startlocation\":{\"lat\":0,\"lng\":0},\"stoplocation\":{\"lat\":1,\"lng\":1},\"starttime\":\"2017-04-22T08:49:07.293Z\",\"endtime\":\"2017-04-22T08:49:07.294Z\",\"accessToken\":\"string\",\"bikeId\":1,\"customerId\":9,\"id\":1}",
+      "2": "{\"startlocation\":{\"lat\":0,\"lng\":0},\"stoplocation\":{\"lat\":1,\"lng\":1},\"starttime\":\"2017-04-22T08:49:07.293Z\",\"endtime\":\"2017-04-22T08:49:07.294Z\",\"accessToken\":\"string\",\"bikeId\":1,\"customerId\":8,\"id\":2}"
+    },
+    "BikeIssue": {
+      "1": "{\"issueDesc\":\"string\",\"issueTime\":\"2017-04-22T08:49:07.099Z\",\"issues\":[1,2,5],\"customerId\":1,\"bikeId\":2,\"id\":1}"
+    },
+    "BikeSurvey": {
+      "1": "{\"answer\":\"yes\",\"FreeText\":\"string\",\"updateTime\":\"2017-04-22T08:49:07.195Z\",\"customerId\":9,\"bikeId\":1,\"surveyId\":1,\"id\":1}"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "bike",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "bikecode": {
+      "type": "string",
+      "required": true
+    },
+    "passcode": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "usedByCustomers": {
+      "type": "hasMany",
+      "model": "Customer",
+      "foreignKey": "usedBy",
+       "through": "BikeUsage"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

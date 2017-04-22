@@ -1,0 +1,20 @@
+{
+  "name": "Survey",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "surveyDesc": {
+      "type": "string"
+    },
+    "expectedAnswer": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

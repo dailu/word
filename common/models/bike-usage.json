@@ -1,0 +1,40 @@
+{
+  "name": "BikeUsage",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "startlocation": {
+      "type": "geopoint"
+    },
+    "stoplocation": {
+      "type": "geopoint"
+    },
+    "starttime": {
+      "type": "date"
+    },
+    "endtime": {
+      "type": "date"
+    },
+    "accessToken": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "bikeId": {
+      "type": "belongsTo",
+      "model": "bike",
+      "foreignKey": "bikeId"
+    },
+    "customerId": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": "customerId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
