@@ -1,11 +1,11 @@
+'use strict';
 module.exports = function(Note) {
-	Note.greet = function(msg, cb) {
+  Note.greet = function(msg, cb) {
 	      cb(null, 'Greetings... ' + msg);
-	    }
+  };
 
-	    Note.remoteMethod('greet', {
+  Note.remoteMethod('greet', {
 	          accepts: {arg: 'msg', type: 'string'},
-	          returns: {arg: 'greeting', type: 'string'}
+	          returns: {arg: 'greeting', type: 'string'},
 	    });
-	  
 };

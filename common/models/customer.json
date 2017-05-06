@@ -20,6 +20,12 @@
         "validate": true,
         "forceId": false
       }
+    },
+      "rides": {
+      "type": "hasMany",
+      "model": "bike",
+      "foreignKey": "rides",
+       "through": "BikeUsage"
     }
   },
   "acls": [

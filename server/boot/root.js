@@ -1,9 +1,6 @@
 'use strict';
 
 module.exports = function(app) {
-	var router = app.loopback.Router();
-	
-
-   
-	app.use(router);
+  var router = app.loopback.Router();
+  app.use(router);
 };

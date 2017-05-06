@@ -24,6 +24,15 @@
       "type": "belongsTo",
       "model": "bike",
       "foreignKey": "bikeId"
+    },
+      "issues": {
+      "type": "referencesMany",
+      "model": "Issue",
+      "foreignKey": "issueIds",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
     }
   },
   "acls": [],
