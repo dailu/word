@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
-    "posttest": "npm run lint && nsp check"
+    "posttest": "npm run lint && nsp check",
+    "test": "mocha test --recursive"
   },
   "dependencies": {
     "compression": "^1.0.3",
@@ -24,7 +25,9 @@
   "devDependencies": {
     "eslint": "^3.17.1",
     "eslint-config-loopback": "^8.0.0",
-    "nsp": "^2.1.0"
+    "loopback-testing-helpers": "^1.0.3",
+    "nsp": "^2.1.0",
+    "should": "^8.0.2"
   },
   "repository": {
     "type": "",
