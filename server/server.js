@@ -4,6 +4,10 @@ var loopback = require('loopback');
 var boot = require('loopback-boot');
 
 var app = module.exports = loopback();
+app.set('views','server/views');
+app.set('view engine','ejs');
+var myContext = require('./middleware/context-myContext')();
+app.use(myContext);
 
 app.start = function() {
   // start the web server

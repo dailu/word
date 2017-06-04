@@ -21,11 +21,11 @@
         "forceId": false
       }
     },
-      "rides": {
+    "rides": {
       "type": "hasMany",
       "model": "bike",
       "foreignKey": "rides",
-       "through": "BikeUsage"
+      "through": "BikeUsage"
     }
   },
   "acls": [

@@ -25,7 +25,7 @@
       "model": "bike",
       "foreignKey": "bikeId"
     },
-      "issues": {
+    "issues": {
       "type": "referencesMany",
       "model": "Issue",
       "foreignKey": "issueIds",

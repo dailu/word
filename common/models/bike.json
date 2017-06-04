@@ -13,6 +13,9 @@
     "passcode": {
       "type": "string",
       "required": true
+    },
+    "location": {
+      "type": "geopoint"
     }
   },
   "validations": [],
@@ -21,7 +24,7 @@
       "type": "hasMany",
       "model": "Customer",
       "foreignKey": "usedBy",
-       "through": "BikeUsage"
+      "through": "BikeUsage"
     }
   },
   "acls": [],

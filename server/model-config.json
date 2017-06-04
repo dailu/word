@@ -87,5 +87,9 @@
   "BikeSurvey": {
     "dataSource": "db",
     "public": true
+  },
+  "RideRoute": {
+    "dataSource": "db",
+    "public": true
   }
 }

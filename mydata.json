@@ -1,7 +1,7 @@
 {
   "ids": {
     "User": 1,
-    "AccessToken": 4,
+    "AccessToken": 5,
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
@@ -12,7 +12,7 @@
     "Order": 6,
     "Book": 2,
     "Account": 3,
-    "bike": 3,
+    "bike": 4,
     "Issue": 6,
     "Survey": 4,
     "BikeUsage": 3,
@@ -24,14 +24,13 @@
     "AccessToken": {
       "QuhdWc5RXlKKWsV03pWN8avJvCVdA9uDDo4XCW47XbBTfWPWQPctgDFsnjy1H60A": "{\"id\":\"QuhdWc5RXlKKWsV03pWN8avJvCVdA9uDDo4XCW47XbBTfWPWQPctgDFsnjy1H60A\",\"ttl\":86400,\"created\":\"2017-04-14T03:31:11.116Z\",\"userId\":8}",
       "HQdloZ3oN7O9CMOeJoGCfbduuW85tYvOFtahRDfOHA2PXx828UtHvgnKiGAUXxVY": "{\"id\":\"HQdloZ3oN7O9CMOeJoGCfbduuW85tYvOFtahRDfOHA2PXx828UtHvgnKiGAUXxVY\",\"ttl\":1209600,\"created\":\"2017-04-22T09:02:04.906Z\",\"userId\":1}",
-      "hyhJ7bcnG2KP2yRmuxEUR7aTudIX2N60JWXfo1cLtf1stfNZNdYaURO0wkIgU2AH": "{\"id\":\"hyhJ7bcnG2KP2yRmuxEUR7aTudIX2N60JWXfo1cLtf1stfNZNdYaURO0wkIgU2AH\",\"ttl\":1209600,\"created\":\"2017-04-22T09:02:12.308Z\",\"userId\":9}"
+      "hyhJ7bcnG2KP2yRmuxEUR7aTudIX2N60JWXfo1cLtf1stfNZNdYaURO0wkIgU2AH": "{\"id\":\"hyhJ7bcnG2KP2yRmuxEUR7aTudIX2N60JWXfo1cLtf1stfNZNdYaURO0wkIgU2AH\",\"ttl\":1209600,\"created\":\"2017-04-22T09:02:12.308Z\",\"userId\":9}",
+      "kOECy6DbLKHBmIonmjC4yXc48s2YbQEyP9zVgWW2rhAYCR7OyWhRZNtwQ5MWVZTi": "{\"id\":\"kOECy6DbLKHBmIonmjC4yXc48s2YbQEyP9zVgWW2rhAYCR7OyWhRZNtwQ5MWVZTi\",\"ttl\":1209600,\"created\":\"2017-05-05T13:54:31.853Z\",\"userId\":1}"
     },
     "ACL": {},
     "RoleMapping": {},
     "Role": {},
-    "Note": {
-      "1": "{\"title\":\"string\",\"content\":\"string\",\"id\":1}"
-    },
+    "Note": {},
     "Author": {
       "1": "{\"name\":\"Author 1\",\"id\":1}"
     },
@@ -58,7 +57,8 @@
     },
     "bike": {
       "1": "{\"bikecode\":\"10001\",\"passcode\":\"ABCD\",\"id\":1}",
-      "2": "{\"bikecode\":\"10002\",\"passcode\":\"ABCD\",\"id\":2}"
+      "2": "{\"bikecode\":\"10002\",\"passcode\":\"ABCD\",\"id\":2}",
+      "3": "{\"bikecode\":\"10007\",\"passcode\":\"ABDE\",\"location\":{\"lat\":1,\"lng\":1},\"id\":3}"
     },
     "Issue": {
       "1": "{\"IssueName\":\"unlock code is not working\",\"id\":1}",
