@@ -16,9 +16,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(loopback.token());
 
 // Passport configurators..
-var loopbackPassport = require('loopback-component-passport');
-var PassportConfigurator = loopbackPassport.PassportConfigurator;
-var passportConfigurator = new PassportConfigurator(app);
+//var loopbackPassport = require('loopback-component-passport');
+//var PassportConfigurator = loopbackPassport.PassportConfigurator;
+//var passportConfigurator = new PassportConfigurator(app);
 /**
  * Flash messages for passport
  *
@@ -27,16 +27,16 @@ var passportConfigurator = new PassportConfigurator(app);
  * if any. This is often the best approach, because the verify callback
  * can make the most accurate determination of why authentication failed.
  */
-var flash      = require('express-flash');
+//var flash      = require('express-flash');
 
 // attempt to build the providers/passport config
-var config = {};
+/*var config = {};
 try {
   config = require('../providers.json');
 } catch (err) {
   console.trace(err);
   process.exit(1); // fatal
-}
+}*/
 /*
 // The access token is only available after boot
 app.middleware('auth', loopback.token({
