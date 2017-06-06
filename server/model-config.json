@@ -3,17 +3,29 @@
     "sources": [
       "loopback/common/models",
       "loopback/server/models",
+       "digitopia-admin/common/models",
+       "./node_modules/loopback-component-passport/lib/models",
       "../common/models",
       "./models"
     ],
     "mixins": [
       "loopback/common/mixins",
       "loopback/server/mixins",
+      "../node_modules/loopback-ds-timestamp-mixin",
+
       "../common/mixins",
       "./mixins"
     ]
   },
   "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "userCredential": {
+    "dataSource": "db",
+    "public": false
+  },
+  "userIdentity": {
     "dataSource": "db",
     "public": false
   },
@@ -39,6 +51,9 @@
   "Address": {
     "dataSource": "transient",
     "public": false
+  },
+   "Email": {
+    "dataSource": "emailDs"
   },
   "Author": {
     "dataSource": "db",

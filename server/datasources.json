@@ -8,21 +8,21 @@
     "name": "transient",
     "connector": "transient"
   },
-  "emailDs": {
+ "emailDs": {
     "name": "emailDs",
     "connector": "mail",
     "transports": [
       {
         "type": "smtp",
-        "host": "smtp.gmail.com",
-        "secure": true,
-        "port": 465,
+        "host": "smtp.live.com",
+        "secure": false,
+        "port": 25,
         "tls": {
           "rejectUnauthorized": false
         },
         "auth": {
-          "user": "email@address.com",
-          "pass": "password"
+          "user": "dai_lu@hotmail.com",
+          "pass": "daiziqiaoqi1"
         }
       }
     ]

@@ -16,6 +16,10 @@
     },
     "location": {
       "type": "geopoint"
+    },
+     "status": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],

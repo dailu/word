@@ -10,6 +10,9 @@
       "type": "number"
     }
   },
+   "restrictResetPasswordTokenScope": true,
+  "emailVerificationRequired": false,
+ 
   "validations": [],
   "relations": {
     "address": {
@@ -26,6 +29,17 @@
       "model": "bike",
       "foreignKey": "rides",
       "through": "BikeUsage"
+    }, 
+   
+    "identities": {
+      "type": "hasMany",
+      "model": "userIdentity",
+      "foreignKey": "customerId"
+    },
+    "credentials": {
+      "type": "hasMany",
+      "model": "userCredential",
+      "foreignKey": "customerId"
     }
   },
   "acls": [
