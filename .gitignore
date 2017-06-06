@@ -16,8 +16,9 @@
 .strong-pm
 coverage
 node_modules
+node_modules/
 npm-debug.log
-
+client
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml

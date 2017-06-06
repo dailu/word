@@ -1,13 +1,13 @@
 {
   "ids": {
     "User": 1,
-    "AccessToken": 9,
+    "AccessToken": 10,
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
     "Note": 2,
     "Author": 2,
-    "Customer": 5,
+    "Customer": 6,
     "Reader": 2,
     "Order": 6,
     "Book": 2,
@@ -30,7 +30,8 @@
       "0OKvTzQCcE6OssHTFzsJ8x2GGFpvCFBLW2b6HHnWeygW1RW2drMAdvaFhGwlWTUe": "{\"id\":\"0OKvTzQCcE6OssHTFzsJ8x2GGFpvCFBLW2b6HHnWeygW1RW2drMAdvaFhGwlWTUe\",\"ttl\":1209600,\"created\":\"2017-06-04T06:23:15.041Z\",\"userId\":1}",
       "keHHxmeWNrr5FnF5tgZDCTOIIz4EOHcN10BhgezC79RIPgnIULoLJIiCPFSQN9sz": "{\"id\":\"keHHxmeWNrr5FnF5tgZDCTOIIz4EOHcN10BhgezC79RIPgnIULoLJIiCPFSQN9sz\",\"ttl\":900,\"created\":\"2017-06-04T06:27:34.294Z\",\"userId\":1}",
       "N9I0HCj1qcafZmzM7KXtwcslRjmA212Z3jwbANloF07IfRqzaKAO6chdYSEXjI5C": "{\"id\":\"N9I0HCj1qcafZmzM7KXtwcslRjmA212Z3jwbANloF07IfRqzaKAO6chdYSEXjI5C\",\"ttl\":900,\"created\":\"2017-06-04T06:33:25.609Z\",\"userId\":1}",
-      "1N1Bojfp5fUbcPkkvHfgKwxOBbxC3LmD9bgG4Pr5fQEjFIBLsdN1aWtOW3wJxdEr": "{\"id\":\"1N1Bojfp5fUbcPkkvHfgKwxOBbxC3LmD9bgG4Pr5fQEjFIBLsdN1aWtOW3wJxdEr\",\"ttl\":900,\"created\":\"2017-06-04T06:40:43.997Z\",\"userId\":4}"
+      "1N1Bojfp5fUbcPkkvHfgKwxOBbxC3LmD9bgG4Pr5fQEjFIBLsdN1aWtOW3wJxdEr": "{\"id\":\"1N1Bojfp5fUbcPkkvHfgKwxOBbxC3LmD9bgG4Pr5fQEjFIBLsdN1aWtOW3wJxdEr\",\"ttl\":900,\"created\":\"2017-06-04T06:40:43.997Z\",\"userId\":4}",
+      "zkIaErpTORQ8Gvc0oPEwCDlT9cfjo8WGg70UdEVUJqioyfvY6MY245lPpMrq5D6x": "{\"id\":\"zkIaErpTORQ8Gvc0oPEwCDlT9cfjo8WGg70UdEVUJqioyfvY6MY245lPpMrq5D6x\",\"ttl\":1209600,\"created\":\"2017-06-06T14:44:07.549Z\",\"userId\":5}"
     },
     "ACL": {},
     "RoleMapping": {},
@@ -40,7 +41,8 @@
       "1": "{\"name\":\"Author 1\",\"id\":1}"
     },
     "Customer": {
-      "4": "{\"password\":\"$2a$10$F1/zGl8JN.6t8..abHXbPO7i9UA0jpzt3QEfXrudIExtNnNRlUbxa\",\"email\":\"dai_lu@hotmail.com\",\"id\":4,\"verificationToken\":null,\"emailVerified\":true}"
+      "4": "{\"password\":\"$2a$10$F1/zGl8JN.6t8..abHXbPO7i9UA0jpzt3QEfXrudIExtNnNRlUbxa\",\"email\":\"dai_lu@hotmail.com\",\"id\":4,\"verificationToken\":null,\"emailVerified\":true}",
+      "5": "{\"name\":\"string\",\"age\":0,\"realm\":\"string\",\"username\":\"test\",\"password\":\"$2a$10$S2HMOqJrfeLJIi4RqXgThuAqGXJMOR6zL729ZXWm4wXp6FZPjXfL6\",\"email\":\"e@test.io\",\"emailVerified\":false,\"billingAddress\":{\"street\":\"string\",\"city\":\"string\",\"state\":\"string\",\"country\":\"string\",\"zipCode\":\"string\"},\"id\":5,\"verificationToken\":\"0303165a64998833eadfae3a459a9d0a611dbbfbaedb5e79fa74a8544a3f720bfe799a572386e0ffd373524d2814aaaedecb12574ad0206aa4f609ab5a1750db\"}"
     },
     "Reader": {
       "1": "{\"name\":\"Reader 1\",\"id\":1}"
