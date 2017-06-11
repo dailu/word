@@ -20,15 +20,14 @@
     },
     "accessToken": {
       "type": "string"
+    },
+     "bikeId": {
+      "type": "number"
     }
   },
   "validations": [],
   "relations": {
-    "bikeId": {
-      "type": "belongsTo",
-      "model": "bike",
-      "foreignKey": "bikeId"
-    },
+    
     "customerId": {
       "type": "belongsTo",
       "model": "Customer",

@@ -22,6 +22,10 @@
       "required": true
     }
   },
+   "updateFreq": {
+      "type": "number",
+      "required": false
+    },
   "validations": [],
   "relations": {
     "usedByCustomers": {
