@@ -23,16 +23,14 @@
     },
      "bikeId": {
       "type": "number"
+    },
+     "customerId": {
+      "type": "number"
     }
   },
   "validations": [],
   "relations": {
     
-    "customerId": {
-      "type": "belongsTo",
-      "model": "Customer",
-      "foreignKey": "customerId"
-    }
   },
   "acls": [],
   "methods": {}

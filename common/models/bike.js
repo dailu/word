@@ -2,7 +2,6 @@
 
 module.exports = function(Bike) {
  Bike.nearby = function(loc, cb) {
-     
 	     Bike.find({where: {
           location: {
            near: loc,
