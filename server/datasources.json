@@ -14,15 +14,15 @@
     "transports": [
       {
         "type": "smtp",
-        "host": "smtp.live.com",
+        "host": "smtp.sendgrid.net",
         "secure": false,
         "port": 25,
         "tls": {
           "rejectUnauthorized": false
         },
         "auth": {
-          "user": "dai_lu@hotmail.com",
-          "pass": "daiziqiaoqi1"
+          "user": "apikey",
+          "pass": "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"
         }
       }
     ]
