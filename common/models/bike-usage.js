@@ -20,4 +20,22 @@ module.exports = function(BikeUsage) {
      }
         );
      });
+
+      BikeUsage.isResumeRide = function(custId, cb) {  
+	 BikeUsage.find({where: {and:[{customerId:custId},{endtime:starttime}]}},
+       function(err, bikeUsge) {
+         if (err)
+        cb(err, null);
+      else
+        cb(null, bikeUsge.id);
+       });
+   
+  };
+
+  BikeUsage.remoteMethod('isResumeRide', {
+	      accepts:[ 
+            {arg:'customerId',type:'number'}
+          ],
+          returns: {arg: 'bikeUsageId', type: 'number'}
+	    });
 };
